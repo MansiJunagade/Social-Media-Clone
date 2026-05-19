@@ -205,4 +205,5 @@ Bg3.addEventListener('click', () => {
     Bg1.classList.remove('active');
     Bg2.classList.remove('active');
     changeBG();
+    console.log("Hello from main branch");
     });
