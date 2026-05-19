@@ -4,7 +4,7 @@ const menuItems = document.querySelectorAll('.menu-item');
 //MESSAGES
 const messagesNotification = document.querySelector('#messages-notification');
 const messages = document.querySelector('.messages');
-const message = messages.querySelectorAll('.message');
+const messageAll = messages.querySelectorAll('.message');
 const messageSearch = document.querySelector('#message-search');
 
 //THEME 
@@ -45,7 +45,7 @@ menuItems.forEach(item => {
 const searchMessage = () => {
     const val = messageSearch.value.toLowerCase();
 
-    message.forEach(user => {
+    messageAll.forEach(user => {
         let name = user.querySelectorAll('h5').textContent.toLowerCase();
         if (name.indexOf(val) != -1) {
             user.style.display = 'flex';
